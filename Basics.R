@@ -6,7 +6,7 @@
 
 #lines 8-20 install necessary packages. The loop that starts on line 15 checks
 #to see if the package is installed, and installs it if it isnt. Then for each
-#package, it is loaded into the working environment. 
+#package, it is loaded into the working environment.
 neededPackages <- c("tidyverse"
                     , "rvest"
                     , "rstudioapi"
@@ -66,10 +66,10 @@ fullName <- paste(givenName,lastName)
 firstVector <- c(1, 2, 3, 4)
 secondVector <- c(1, 2, 4, 8)
 #add these two vectors together and assign it to variable "thirdVector"
-thirdVector <- firstVector + secondVector
 
-#how would you add 1 to each element of thirdVector? 
-thirdVector + 1
+
+#how would you add 1 to each element of thirdVector?
+
 
 #let's take a look at how piping works
 #These next two lines do the exact same thing
@@ -82,17 +82,14 @@ grades <- c(92, 81, 55, 100, 101) %>% as.numeric()
 #two different ways to take the mean
 avgGrade <- mean(grades)
 
-#how would we 'pipe' this? 
+#how would we 'pipe' this?
 avgGrade <- grades %>% mean()
 
 #two different ways to take the median
 medianGrade <- grades %>% median()
 medianGrade <- median(grades)
 
-#if the parenthesis are empty, we don't even need to include them! Although this
-#can sometimes be confusing, because it is not immediately clear if 'median' is
-#a function or a variable
-medianGrade <- grades %>% median
+
 
 #Data frames are the most useful and powerful structure in R and is essentially
 #a vector of vectors (2D array)
@@ -129,5 +126,6 @@ classes.df %>% select("grades", "professors")
 #Can you figure out what this next line does?
 classes.df %>% filter(grades > 95) %>% select(professors)
 
-#How would you return the names of the classes where your grades are less than 90?
-classes.df %>% filter(grades > 90) %>% select(courses, grades)
+#How would you return the names of the classes where your grades are less than
+#90?
+
