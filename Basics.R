@@ -83,7 +83,7 @@ grades <- c(92, 81, 55, 100, 101) %>% as.numeric()
 avgGrade <- mean(grades)
 
 #how would we 'pipe' this?
-avgGrade <- grades %>% mean()
+
 
 #two different ways to take the median
 medianGrade <- grades %>% median()
