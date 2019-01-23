@@ -1,7 +1,7 @@
 ####SETUP
 #Author: D. Winston Underwood Jr
-#Date: January 3rd, 2018
-#Last Modified: January 7th, 2019
+#Date: January 3rd, 2019
+#Last Modified: January 23rd, 2019
 #Purpose: Web scraping example for UBWA
 
 #First we need to install the packages we plan on using. Installing only needs
