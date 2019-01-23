@@ -53,7 +53,8 @@ wd <- getwd()
 
 myMovies.df <- read.csv('Movies.csv')
 myMovies.df
-colnames(myMovies.df) <- "titles"
+
+#how would you rename the column name?
 
 
 
@@ -83,14 +84,6 @@ rating_text <- html_text(rating_html)
 rating_number <- as.numeric(rating_text)
 rating <- as.data.frame(rating_number)
 
-#movie description
-description_html <- html_nodes(webpage,".ratings-bar+ .text-muted")
-description_text <- html_text(description_html)
-description <- as.data.frame(description_text)
-#has some extra characters we don't want (/n) so this line replaced them with
-#nothing, ie removing them
-description <- gsub("\n","",description)
-
 #we can even pull out director and stars, however we would need regular
 #expressions (regex) to extract those items from the text source
 stars_html <- html_nodes(webpage,".text-muted+ p")
@@ -117,10 +110,10 @@ colnames(topMovies.df) <- c("titles", "rating")
 
 watchedMovies.df <- inner_join(topMovies.df, myMovies.df)
 
-watched <- nrow(myMovies.df)
-watched
-topWatched <- nrow(watchedMovies.df)
-topWatched
-topWatched / watched
+#how many movies have you watched? 
 
-watchedMovies.df
+
+#how many movies have you watched in the top 250?
+
+
+#What is the percentage of movies you've watched in the top 250?
