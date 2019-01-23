@@ -1,7 +1,7 @@
 ####SETUP
 #Author: D. Winston Underwood Jr
 #Date: January 7th, 2019
-#Last Modified: January 7th, 2019
+#Last Modified: January 23rd, 2019
 #Purpose: Basics of R for UBWA
 
 #lines 8-20 install necessary packages. The loop that starts on line 15 checks
